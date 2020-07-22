@@ -1,15 +1,23 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import DiscountCalc from './components/DiscountCalc';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import DiscountCalc from './Components/DiscountCalc';
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <DiscountCalc />
-    <Footer />
+      <div className="bodyWrapper">
+        <div className="calculator">
+          <DiscountCalc />
+        </div>
+        <div className="info">
+          Info
+        </div>
+      </div>
+      <Footer />
     
     </div>
   );
