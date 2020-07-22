@@ -1,5 +1,5 @@
-import React from 'react';
-import moment from 'moment';
+import React from './node_modules/react';
+import moment from './node_modules/moment';
 //import logo from '../images/mathlogo.jpg';
 
 var date=moment().format("DD/MM/YYYY");
