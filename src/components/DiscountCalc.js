@@ -11,7 +11,7 @@ class DiscountCalc extends Component {
         e.preventDefault();
         var inputPrice = e.target.value;
         if (inputPrice < 0 || isNaN(inputPrice)) {
-            console.log("WARNING: Negative price or letters entered");
+            console.log("WARNING: Negative price");
             this.setState({price: "ERROR; invalid number"});
         } else {
             this.setState({price: inputPrice});
@@ -41,7 +41,7 @@ class DiscountCalc extends Component {
             <div>
                 Enter the original price:
                 <p>
-                    <input onChange={this.updatePrice} />
+                    <input type="number" onChange={this.updatePrice} />
                 </p>
                 originalPrice = {this.state.price}
             </div>
@@ -49,7 +49,7 @@ class DiscountCalc extends Component {
             <div>
                 Enter the discount percent: 
                 <p>
-                    <input onChange={this.updateDiscount} />
+                    <input type="number" min={0} onChange={this.updateDiscount} />
                 </p>
                 discount = {this.state.discount}
             </div>
@@ -64,7 +64,7 @@ class DiscountCalc extends Component {
                 </p>
             </div>
 
-            Render this</div>)
+        </div>)
     }
 }
 
