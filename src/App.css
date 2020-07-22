@@ -53,6 +53,8 @@
   padding-bottom: 5;
   text-align: center;
   text-decoration-line: underline;
+  border-radius: 20px;
+  margin:10px;
 }
 .header{
   background-color: lightskyblue;
