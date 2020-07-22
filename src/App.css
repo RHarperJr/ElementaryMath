@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 60px;
+  width: 60px;
   pointer-events: none;
+  padding-right: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  background-color: lightskyblue;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 10px;
+}
+
+.counter{
+  text-align: right;
+  padding-top: 5px;
+}
+
+html{
+  background-color: lightgoldenrodyellow;
 }
