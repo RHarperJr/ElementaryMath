@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import DiscountCalc from './components/DiscountCalc';
+import Header from './components/Header';
+import DiscountCalc from './components/DiscountCalc'
+
+
 
 function App() {
   return (
-    <div className="App">
+    <div >
+      <Header />
       <DiscountCalc />
     </div>
   );
