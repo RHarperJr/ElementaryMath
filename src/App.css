@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  color: black;
+  background-color: lightskyblue;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  font-size: 16;
+  font-weight: bold;
+  line-height: 5;
+  letter-spacing: normal;
+  padding-bottom: 5;
+  text-align: center;
+  text-decoration-line: underline;
+
+}
