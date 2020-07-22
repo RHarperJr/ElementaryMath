@@ -76,3 +76,27 @@
 html{
   background-color: lightgoldenrodyellow;
 }
+
+.calculator {
+  background-color: lightskyblue;
+  font-size: 1.25em;
+  width: 45vw;
+  float: left;
+  margin-left: 1vw;
+}
+
+.info {
+  background-color: lightcoral;
+  font-size: 1.25em;
+  width: 45vw;
+  float: left;
+  margin-right: 1vw;
+}
+
+.bodyWrapper {
+  width: 100vw;
+  margin-top: 5%;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  display: inline-block;
+}
