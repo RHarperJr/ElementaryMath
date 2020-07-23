@@ -9,14 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="bodyWrapper">
-        <div className="calculator">
-          <DiscountCalc />
-        </div>
-        <div className="info">
-          Info
-        </div>
-      </div>
+      <DiscountCalc />
       <Footer />
     
     </div>

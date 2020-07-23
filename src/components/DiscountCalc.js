@@ -42,39 +42,64 @@ class DiscountCalc extends Component {
 
     render() {
         return (<div>
-            Discount Calculator
-            <div className="inputs">
-                Enter the original price: &nbsp;
-                    <TextField error={this.state.price < 0 || isNaN(this.state.price)} 
-                        helperText={this.state.price < 0 || isNaN(this.state.price) ? "ERROR; invalid number":""}
-                        id="outlined-basic" label="Price" variant="outlined" onChange={this.updatePrice} 
-                        InputProps={{
-                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
-                        }} 
-                        size="small"/>
-            </div>
-            
-            <div className="inputs">
-                Enter the discount percent: &nbsp;
-                <TextField error={(this.state.discount < 0 || this.state.discount > 100 || isNaN(this.state.discount))} 
-                        helperText={(this.state.discount < 0 || this.state.discount > 100 || isNaN(this.state.discount)) ? "ERROR; invalid percentage":""}
-                        id="outlined-basic" label="Discount" variant="outlined" onChange={this.updateDiscount} 
-                        InputProps={{
-                        endAdornment: <InputAdornment position="end">%</InputAdornment>,
-                        }} 
-                        InputLabelProps={{ shrink: true }} 
-                        size="small" />
-            </div>
+            <div className="bodyWrapper">
+                <div className="calculator">
+                    Discount Calculator
+                    <div className="inputs">
+                        Enter the original price: &nbsp;
+                            <TextField error={this.state.price < 0 || isNaN(this.state.price)} 
+                                helperText={this.state.price < 0 || isNaN(this.state.price) ? "ERROR; invalid number":""}
+                                id="outlined-basic" label="Price" variant="outlined" onChange={this.updatePrice} 
+                                InputProps={{
+                                startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                                }} 
+                                size="small"/>
+                    </div>
+                    
+                    <div className="inputs">
+                        Enter the discount percent: &nbsp;
+                        <TextField error={(this.state.discount < 0 || this.state.discount > 100 || isNaN(this.state.discount))} 
+                                helperText={(this.state.discount < 0 || this.state.discount > 100 || isNaN(this.state.discount)) ? "ERROR; invalid percentage":""}
+                                id="outlined-basic" label="Discount" variant="outlined" onChange={this.updateDiscount} 
+                                InputProps={{
+                                endAdornment: <InputAdornment position="end">%</InputAdornment>,
+                                }} 
+                                InputLabelProps={{ shrink: true }} 
+                                size="small" />
+                    </div>
 
-            <div className="button">
-                <Button variant="contained" onClick={this.calculatePrice}> Calculate </Button>
+                    <div className="button">
+                        <Button variant="contained" onClick={this.calculatePrice}> Calculate </Button>
+                    </div>
+                    <p>
+                        Final Price: ${Math.floor(this.state.finalValue*100) / 100}
+                    </p>
+                    <p>
+                        Savings: ${Math.floor(this.state.savings*100) / 100}
+                    </p>
+                </div>
+                <div className= "info">
+                    This calcuation is achieved by: 
+                    <p>
+                        Discount / 100 = Decimal Value
+                    </p>
+                    <p>
+                    {this.state.discount } / 100 = {this.state.discount / 100}
+                    </p> 
+                    <p>
+                        Decimal Value * Original Price = Savings
+                    </p>
+                    <p>
+                    {this.state.discount / 100} * {this.state.price} = {this.state.savings}
+                    </p>
+                    <p>
+                        Original Price - Savings = Final Price
+                    </p>
+                    <p>
+                        {this.state.price} - {this.state.savings} = {this.state.finalValue}
+                    </p>
+                </div>
             </div>
-            <p>
-                Final Price: ${Math.floor(this.state.finalValue*100) / 100}
-            </p>
-            <p>
-                Savings: ${Math.floor(this.state.savings*100) / 100}
-            </p>
 
         </div>)
     }
