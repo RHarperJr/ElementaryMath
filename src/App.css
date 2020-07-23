@@ -45,7 +45,7 @@
   background-color: lightskyblue;
   position: fixed;
   bottom: 0px;
-  width: 100vw;
+  width: 99vw;
   font-size: 16;
   font-weight: bold;
   line-height: 5;
@@ -64,13 +64,16 @@
   border-radius: 20px;
   text-align: left;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 30px;
   margin: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .counter{
   text-align: right;
   padding-top: 5px;
+  font-size: medium;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 html{
@@ -80,20 +83,35 @@ html{
 .calculator {
   background-color: lightskyblue;
   font-size: 1.25em;
-  width: 45vw;
+  width: 42vw;
   float: left;
   margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  height: 50%;
 }
 
 .info {
-  font-size: 1.25em;
-  width: 45vw;
+  width: 40vw;
   float: left;
   margin-right: 1vw;
+  margin-left: 1vw;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: rgb(22, 129, 40);
+  border-radius: 20px;
+  height: 410px;
+  color: white;
+  border: solid;
+  border-width: 8px;
+  border-color: rgb(97, 44, 18);
 }
 
 .bodyWrapper {
-  width: 100vw;
+  width: 92vw;
   margin-top: 5%;
   margin-left: 4vw;
   margin-right: 4vw;
@@ -104,9 +122,18 @@ html{
   margin-top: 2vw;
   margin-bottom: 2vw;
   margin-right: 2vw;
-  text-align: right;
 }
 
 .button {
   margin-bottom: 3vw;
+}
+
+.money{
+  height: 150px;
+  width: 150px;
+  padding-top: 15%;
+}
+
+.infoTitle{
+  font-size: x-large;
 }

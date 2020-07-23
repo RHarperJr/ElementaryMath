@@ -2,7 +2,7 @@ import React from '../../node_modules/react';
 import moment from '../../node_modules/moment';
 //import logo from '../images/mathlogo.jpg';
 
-var date=moment().format("DD/MM/YYYY");
+var date=moment().format("MM/DD/YYYY");
 
 const Footer = () => <div className = "footer"> About Us | Terms of Use | Privacy Policy |
  Date: {date} 

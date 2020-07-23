@@ -19,13 +19,13 @@ class Header extends Component {
 
     render() {
         return (
-            <nav className="header">
+            <div className="header">
                 <img src={logo} className="App-logo" alt="logo" />
 
             East Villagers Elementary School
 
             <div className="counter">You have spent {this.state.time} seconds on our site!</div>
-            </nav>
+            </div>
         )
     }
 
